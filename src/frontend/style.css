@@ -1,0 +1,120 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 50px; /* Add some padding to push content down */
+}
+
+/* Main title positioned like a header */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Container for everything */
+#divcontainer {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for container */
+#divcontainer:hover {
+    transform: scale(1.02);
+}
+
+/* Container for the generated numbers */
+#divBet {
+    margin-bottom: 20px;
+}
+
+/* Main numbers and star numbers styling */
+.numbers {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.numbers li {
+    font-size: 1.4rem;
+    color: #007bff;
+    background-color: #e0f7fa;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Scale effect for numbers */
+.numbers li:hover {
+    transform: scale(1.1);
+    background-color: #b3e5fc;
+}
+
+/* Button styling */
+button#genBtn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.2);
+}
+
+button#genBtn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Good Luck message */
+#goodLuckMessage {
+    display: none;
+    margin-top: 20px;
+}
+
+#goodLuckMessage h1 {
+    color: #28a745;
+    font-size: 1.6rem;
+    font-weight: 600;
+    animation: fadeIn 1s ease;
+}
+
+/* Fade-in animation for Good Luck message */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
